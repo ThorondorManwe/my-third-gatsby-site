@@ -4,6 +4,7 @@ import Layout from '../../components/layout';
 
 const BlogPage = ({ data }) => {
   return (
+    <>
     <Layout pageTitle="My Blog Posts">
       {
         data.allMdx.nodes.map(node => (
@@ -18,6 +19,8 @@ const BlogPage = ({ data }) => {
         ))
       }
     </Layout>
+
+    </>
   )
 };
 
